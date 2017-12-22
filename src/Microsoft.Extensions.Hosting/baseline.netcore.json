@@ -1,0 +1,397 @@
+{
+  "AssemblyIdentity": "Microsoft.Extensions.Hosting, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+  "Types": [
+    {
+      "Name": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
+      "Visibility": "Public",
+      "Kind": "Class",
+      "ImplementedInterfaces": [],
+      "Members": [
+        {
+          "Kind": "Method",
+          "Name": "get_SuppressStatusMessages",
+          "Parameters": [],
+          "ReturnType": "System.Boolean",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "set_SuppressStatusMessages",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "ReturnType": "System.Void",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Constructor",
+          "Name": ".ctor",
+          "Parameters": [],
+          "Visibility": "Public",
+          "GenericParameter": []
+        }
+      ],
+      "GenericParameters": []
+    },
+    {
+      "Name": "Microsoft.Extensions.Hosting.HostBuilder",
+      "Visibility": "Public",
+      "Kind": "Class",
+      "ImplementedInterfaces": [
+        "Microsoft.Extensions.Hosting.IHostBuilder"
+      ],
+      "Members": [
+        {
+          "Kind": "Method",
+          "Name": "get_Properties",
+          "Parameters": [],
+          "ReturnType": "System.Collections.Generic.IDictionary<System.Object, System.Object>",
+          "Sealed": true,
+          "Virtual": true,
+          "ImplementedInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureHostConfiguration",
+          "Parameters": [
+            {
+              "Name": "configureDelegate",
+              "Type": "System.Action<Microsoft.Extensions.Configuration.IConfigurationBuilder>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Sealed": true,
+          "Virtual": true,
+          "ImplementedInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureAppConfiguration",
+          "Parameters": [
+            {
+              "Name": "configureDelegate",
+              "Type": "System.Action<Microsoft.Extensions.Hosting.HostBuilderContext, Microsoft.Extensions.Configuration.IConfigurationBuilder>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Sealed": true,
+          "Virtual": true,
+          "ImplementedInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureServices",
+          "Parameters": [
+            {
+              "Name": "configureDelegate",
+              "Type": "System.Action<Microsoft.Extensions.Hosting.HostBuilderContext, Microsoft.Extensions.DependencyInjection.IServiceCollection>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Sealed": true,
+          "Virtual": true,
+          "ImplementedInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "UseServiceProviderFactory<T0>",
+          "Parameters": [
+            {
+              "Name": "factory",
+              "Type": "Microsoft.Extensions.DependencyInjection.IServiceProviderFactory<T0>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Sealed": true,
+          "Virtual": true,
+          "ImplementedInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Visibility": "Public",
+          "GenericParameter": [
+            {
+              "ParameterName": "TContainerBuilder",
+              "ParameterPosition": 0,
+              "BaseTypeOrInterfaces": []
+            }
+          ]
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureContainer<T0>",
+          "Parameters": [
+            {
+              "Name": "configureDelegate",
+              "Type": "System.Action<Microsoft.Extensions.Hosting.HostBuilderContext, T0>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Sealed": true,
+          "Virtual": true,
+          "ImplementedInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Visibility": "Public",
+          "GenericParameter": [
+            {
+              "ParameterName": "TContainerBuilder",
+              "ParameterPosition": 0,
+              "BaseTypeOrInterfaces": []
+            }
+          ]
+        },
+        {
+          "Kind": "Method",
+          "Name": "Build",
+          "Parameters": [],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHost",
+          "Sealed": true,
+          "Virtual": true,
+          "ImplementedInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Constructor",
+          "Name": ".ctor",
+          "Parameters": [],
+          "Visibility": "Public",
+          "GenericParameter": []
+        }
+      ],
+      "GenericParameters": []
+    },
+    {
+      "Name": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+      "Visibility": "Public",
+      "Kind": "Class",
+      "Abstract": true,
+      "Static": true,
+      "Sealed": true,
+      "ImplementedInterfaces": [],
+      "Members": [
+        {
+          "Kind": "Method",
+          "Name": "UseEnvironment",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "environment",
+              "Type": "System.String"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "UseContentRoot",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "contentRoot",
+              "Type": "System.String"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureLogging",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "configureLogging",
+              "Type": "System.Action<Microsoft.Extensions.Hosting.HostBuilderContext, Microsoft.Extensions.Logging.ILoggingBuilder>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureLogging",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "configureLogging",
+              "Type": "System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureAppConfiguration",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "configureDelegate",
+              "Type": "System.Action<Microsoft.Extensions.Configuration.IConfigurationBuilder>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureServices",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "configureDelegate",
+              "Type": "System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "ConfigureContainer<T0>",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "configureDelegate",
+              "Type": "System.Action<T0>"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": [
+            {
+              "ParameterName": "TContainerBuilder",
+              "ParameterPosition": 0,
+              "BaseTypeOrInterfaces": []
+            }
+          ]
+        },
+        {
+          "Kind": "Method",
+          "Name": "UseConsoleLifetime",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            }
+          ],
+          "ReturnType": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "RunConsoleAsync",
+          "Parameters": [
+            {
+              "Name": "hostBuilder",
+              "Type": "Microsoft.Extensions.Hosting.IHostBuilder"
+            },
+            {
+              "Name": "cancellationToken",
+              "Type": "System.Threading.CancellationToken",
+              "DefaultValue": "default(System.Threading.CancellationToken)"
+            }
+          ],
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Static": true,
+          "Extension": true,
+          "Visibility": "Public",
+          "GenericParameter": []
+        }
+      ],
+      "GenericParameters": []
+    },
+    {
+      "Name": "Microsoft.Extensions.Hosting.HostOptions",
+      "Visibility": "Public",
+      "Kind": "Class",
+      "ImplementedInterfaces": [],
+      "Members": [
+        {
+          "Kind": "Method",
+          "Name": "get_ShutdownTimeout",
+          "Parameters": [],
+          "ReturnType": "System.TimeSpan",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Method",
+          "Name": "set_ShutdownTimeout",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.TimeSpan"
+            }
+          ],
+          "ReturnType": "System.Void",
+          "Visibility": "Public",
+          "GenericParameter": []
+        },
+        {
+          "Kind": "Constructor",
+          "Name": ".ctor",
+          "Parameters": [],
+          "Visibility": "Public",
+          "GenericParameter": []
+        }
+      ],
+      "GenericParameters": []
+    }
+  ]
+}
